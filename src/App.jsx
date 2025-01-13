@@ -16,8 +16,10 @@ function App() {
  
   const router = createBrowserRouter([
     {
+     
       path: '', element: <Layout />, children: [
         { path: '/', element: <Home homeImg={homeImg} /> }
+        ,{index:true,element: <Home homeImg={homeImg} />}
         , {
           path: '/about', element: <About />
         }
